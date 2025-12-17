@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Share Your Story – CalmSpace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Write down what is on your mind and share it anonymously on CalmSpace.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="logo-area">
+    <h1>CalmSpace</h1>
+    <p class="tagline">a small place for heavy feelings</p>
+  </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="share.html">Share Your Story</a></li>
+      <li><a href="board.html">Community Board</a></li>
+    </ul>
+  </nav>
+  <button class="theme-toggle" type="button" data-theme-toggle>
+    Switch to dark mode
+  </button>
+</header>
+
+<main>
+  <header class="page-header">
+    <h2>Share Your Story</h2>
+    <p>
+      Use the form below to write about something that has been weighing on you.
+      You can use a nickname or stay anonymous. Submitted stories on this demo
+      page appear in the preview list below.
+    </p>
+  </header>
+
+  <section class="layout-grid share-layout">
+    <article>
+      <h3>Your Post</h3>
+      <form id="share-form">
+        <div class="form-field">
+          <label for="nickname">Nickname (optional)</label>
+          <input type="text" id="nickname" name="nickname" placeholder="e.g., Moonlight">
+        </div>
+
+        <div class="form-field">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" required placeholder="A short title for your feeling">
+        </div>
+
+        <div class="form-field">
+          <label for="mood">Current Mood</label>
+          <select id="mood" name="mood">
+            <option value="tired">Tired</option>
+            <option value="anxious">Anxious</option>
+            <option value="lonely">Lonely</option>
+            <option value="frustrated">Frustrated</option>
+            <option value="hopeful">Hopeful</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="story">What would you like to share?</label>
+          <textarea id="story" name="story" rows="6" required
+            placeholder="Write a few sentences about what has been on your mind."></textarea>
+        </div>
+
+        <button type="submit" class="primary-button">Post to Preview Wall</button>
+      </form>
+    </article>
+
+    <aside>
+      <h3>Preview Wall</h3>
+      <p>
+        This list shows sample posts and anything you submit with the form. In a
+        real application, posts would be stored on a server, but here we are
+        focusing on front-end design and interaction.
+      </p>
+
+      <figure class="side-image">
+        <img
+  src="writing.jpg"
+  srcset="writing-2x.jpg 2x"
+  width="360"
+  height="240"
+  alt="An open notebook with a pen, inviting someone to write."
+>
+        <figcaption>Writing can make complex feelings feel a little more manageable.</figcaption>
+      </figure>
+
+      <div id="share-preview" class="preview-list">
+        <article class="preview-card">
+          <h4>Feeling behind</h4>
+          <p class="preview-meta">Nickname: Quiet River &middot; Mood: anxious</p>
+          <p>
+            Everyone around me feels so put together. I am trying my best but I
+            still feel like I am one step behind. I just needed to say it out loud.
+          </p>
+        </article>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2025 CalmSpace (student project). This site does not provide professional medical or mental health advice.</p>
+  <p>Contact: <a href="mailto:Sunniiiwork031@gmail.com">Sunniiiwork031@gmail.com</a></p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
